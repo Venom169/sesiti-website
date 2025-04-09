@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(-45deg, #0a0415, #6e2cf5, #0a0415, #6e2cf5);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ffd700;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(10, 4, 21, 0.8);
+}
+
+.brand-name {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: gold;
+    text-shadow: 2px 2px 4px black;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #dc1fff;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    border: 3px solid #00f5a0;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
