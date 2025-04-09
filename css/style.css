@@ -75,3 +75,27 @@ nav a:hover {
 .gallery img:hover {
     transform: scale(1.05);
 }
+.about {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 40px;
+    border-top: 2px dashed #00f5a0;
+    border-bottom: 2px dashed #00f5a0;
+    border-radius: 20px;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #ffdd00;
+    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #ffffff;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
