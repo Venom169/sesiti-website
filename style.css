@@ -1,0 +1,75 @@
+
+:root {
+  --main-purple: #6e2cf5;
+  --neon-green: #00f5a0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(270deg, #0a0415, #6e2cf5, #0a0415);
+  background-size: 600% 600%;
+  animation: gradientBG 20s ease infinite;
+  color: white;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a0415;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  color: var(--main-purple);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--neon-green);
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.gallery {
+  padding: 2rem;
+  text-align: center;
+}
+
+.nfts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nfts img {
+  width: 200px;
+  border: 2px solid var(--main-purple);
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0a0415;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
